@@ -1,5 +1,7 @@
 # CS330: Deep Multi-Task and Meta Learning
-[page](https://cs330.stanford.edu/)
+Course Website[page](https://cs330.stanford.edu/)
+
+WIP
 
 Updated to use Tensorflow 2
 
