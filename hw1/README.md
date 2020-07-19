@@ -1,5 +1,5 @@
 # CS330: Deep Multi-Task and Meta Learning
-Course Website[page](https://cs330.stanford.edu/)
+[Course Website](https://cs330.stanford.edu/)
 
 WIP
 
