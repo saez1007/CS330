@@ -12,8 +12,8 @@ import pickle
 import random
 import tensorflow as tf
 
-from load_data import DataGenerator
-from models.maml import MAML
+from HW2.load_data import DataGenerator
+from HW2.models.maml import MAML
 from tensorflow.python.platform import flags
 
 FLAGS = flags.FLAGS
@@ -69,6 +69,8 @@ def meta_train(model, saver, sess, exp_string, data_generator, resume_itr=0):
 
         # sample a batch of training data and partition into
         # group a (inputa, labela) and group b (inputb, labelb)
+
+        data_generator.sample_batch(batch_type = 'train', batch_size = data_generator.)
 
         inputa, inputb, labela, labelb = None, None, None, None
         #############################
@@ -185,7 +187,7 @@ def main():
     model = MAML(dim_input, dim_output, meta_test_num_inner_updates=meta_test_num_inner_updates)
 
     # TESTING AREA
-    meta_train(model, [], [], [], DataGenerator)
+    meta_train(model, [], [], [], data_generator)
 
     model.construct_model(prefix='maml')
     model.summ_op = tf.summary.merge_all()
